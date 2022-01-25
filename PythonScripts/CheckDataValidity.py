@@ -9,7 +9,7 @@ class CheckDataValidity:
         self.data=Data
         self.SCHEMA='DataCite'
         self.DATEFORMART='d-%m-%Y'
-        self.FIELDS=['Author','Date','Title']
+        self.MANDATORYFIELDS=['Identifier','Creator','Title','Publisher','PublicationYear','ResourceType']
 
     def check_for_na(self) -> bool:
         # returns a boolean
@@ -18,14 +18,14 @@ class CheckDataValidity:
 
     def check_format_of_date(self)-> bool:
         try:
-            datetime.datetime.strptime(date_string, format)
+            datetime.datetime.strptime(self.data.Date, format)
         except ValueError:
             correct_format=False
         else:
             correct_format=True
         return correct_format
 
-    def check_fields_study_meta(self):
+    def check_required_fields(self):
         for x in self.FIELDS:
             field_present=x in self.data.keys()
             if field_present == False:
