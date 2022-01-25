@@ -21,18 +21,20 @@ class CheckDataValidity:
             datetime.datetime.strptime(self.data.Date, format)
         except ValueError:
             correct_format=False
+        except AttributeError:
+            print('Object has no date attribute')
+            correct_format=False
         else:
             correct_format=True
         return correct_format
 
     def check_required_fields(self):
-        for x in self.FIELDS:
+        for x in self.MANDATORYFIELDS:
             field_present=x in self.data.keys()
             if field_present == False:
                 # Raise an error warning without stopping the pyhton script
-                print('Warning: metadata field %d is missing ! ' % x)
+                print('Warning: metadata field %s is missing ! ' % x)
             else:
-                # keep track if the number of trues is equal to the self.FIELDS length
-                # TODO: add the tracker for true
+                print('All is fine')
         return None # return None since we only raise errors if a field is not present
 

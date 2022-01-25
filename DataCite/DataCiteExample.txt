@@ -1,0 +1,7 @@
+Identifier 2101231
+Creater	T.J.M. Kuijpers
+Title	Test DataCite object
+Publiser	Nature group
+PublicationYear	2022
+ResourceType	Journal Paper
+
