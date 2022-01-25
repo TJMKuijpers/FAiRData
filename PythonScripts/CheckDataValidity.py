@@ -2,25 +2,28 @@
 ######################### Class to check data validity of xml DataCite Schema #######################################
 #####################################################################################################################
 # Author: T.J.M. Kuijpers   version 0.0.1 date (start) : 25 Januari 2022
-
+import datetime
 class CheckDataValidity:
 
     def __init__(self,Data=None):
         self.data=Data
         self.SCHEMA='DataCite'
-        # TODO find the format for strings and dates in DataCite schema
-        self.AUTHORFORMART=''
-        self.DATAFORMAR=''
+        self.DATEFORMART='d-%m-%Y'
         self.FIELDS=['Author','Date','Title']
 
-    def check_for_na(self):
+    def check_for_na(self) -> bool:
         # returns a boolean
-        na_present=self.data.isna().any()
+        na_present=self.data.isnull().values.any()
         return na_present
 
-    def check_format_of_cells(self):
-        # Function to check if values have the right format
-        return None
+    def check_format_of_date(self)-> bool:
+        try:
+            datetime.datetime.strptime(date_string, format)
+        except ValueError:
+            correct_format=False
+        else:
+            correct_format=True
+        return correct_format
 
     def check_fields_study_meta(self):
         for x in self.FIELDS:
