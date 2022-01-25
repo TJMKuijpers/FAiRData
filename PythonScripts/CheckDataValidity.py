@@ -10,31 +10,42 @@ class CheckDataValidity:
         self.SCHEMA='DataCite'
         self.DATEFORMART='d-%m-%Y'
         self.MANDATORYFIELDS=['Identifier','Creator','Title','Publisher','PublicationYear','ResourceType']
+        self.na_checked=None
+        self.required_fields = None
+        self.correct_format = None
 
-    def check_for_na(self) -> bool:
+    def check_for_na(self) -> None:
         # returns a boolean
-        na_present=self.data.isnull().values.any()
-        return na_present
+        na_present=not all(self.data.values())
+        if na_present:
+            self.na_checked='Passed'
+        else:
+            self.na_checked='Failed'
+        return None
 
-    def check_format_of_date(self)-> bool:
+    def check_format_of_date(self)-> None:
         try:
             datetime.datetime.strptime(self.data.Date, format)
         except ValueError:
-            correct_format=False
+            self.correct_format='Failed, format is wrong'
         except AttributeError:
-            print('Object has no date attribute')
-            correct_format=False
+            self.correct_format='Failed, json object has no data attribute'
         else:
-            correct_format=True
-        return correct_format
+            self.correct_format='Passed'
+        return None
 
-    def check_required_fields(self):
+    def check_required_fields(self) -> None:
+        print('Checking the required fields...')
+        test_passed=0
         for x in self.MANDATORYFIELDS:
             field_present=x in self.data.keys()
             if field_present == False:
                 # Raise an error warning without stopping the pyhton script
                 print('Warning: metadata field %s is missing ! ' % x)
             else:
-                print('All is fine')
-        return None # return None since we only raise errors if a field is not present
-
+                test_passed=test_passed+1
+        if test_passed == self.data.keys().__len__():
+            self.required_fields='Passed'
+        else:
+            self.required_fields='Failed'
+        return None
