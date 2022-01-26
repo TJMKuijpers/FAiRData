@@ -5,14 +5,24 @@
 import datetime
 class CheckDataValidity:
 
-    def __init__(self,Data=None):
+    def __init__(self,Data=None,type=None):
         self.data=Data
+        self.type=None
         self.SCHEMA='DataCite'
         self.DATEFORMART='d-%m-%Y'
-        self.MANDATORYFIELDS=['Identifier','Creator','Title','Publisher','PublicationYear','ResourceType']
+        self.MANDATORYFIELDS=None
         self.na_checked=None
         self.required_fields = None
         self.correct_format = None
+
+    def set_the_mandatory_fields(self) -> None:
+        if self.type=='Administrative':
+            self.MANDATORYFIELDS=['Creator','Title','Publisher','PublicationYear','ResourceType']
+        if self.type=='Descriptive':
+            self.MANDATORYFIELDS=['Title','Publisher','Publication year','Lead author','Principle investigator','Date','Abstract']
+        if self.type='Structural':
+            self.MANDATORYFIELDS=['Experiment','']
+        print('Mandatory fields are set to match the %s metadata' % self.type)
 
     def check_for_na(self) -> None:
         # returns a boolean
