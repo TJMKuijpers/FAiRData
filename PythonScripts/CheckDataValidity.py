@@ -20,7 +20,7 @@ class CheckDataValidity:
             self.MANDATORYFIELDS=['Creator','Title','Publisher','PublicationYear','ResourceType']
         if self.type=='Descriptive':
             self.MANDATORYFIELDS=['Title','Publisher','Publication year','Lead author','Principle investigator','Date','Abstract']
-        if self.type='Structural':
+        if self.type=='Structural':
             self.MANDATORYFIELDS=['Experiment','']
         print('Mandatory fields are set to match the %s metadata' % self.type)
 
