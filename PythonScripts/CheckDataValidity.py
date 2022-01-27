@@ -8,7 +8,6 @@ class CheckDataValidity:
     def __init__(self,Data=None,type=None):
         self.data=Data
         self.type=None
-        self.SCHEMA='DataCite'
         self.DATEFORMART='d-%m-%Y'
         self.MANDATORYFIELDS=None
         self.na_checked=None
@@ -17,11 +16,13 @@ class CheckDataValidity:
 
     def set_the_mandatory_fields(self) -> None:
         if self.type=='Administrative':
-            self.MANDATORYFIELDS=['Creator','Title','Publisher','PublicationYear','ResourceType']
+            self.MANDATORYFIELDS=['Creator','Study title','Publisher','PublicationYear','ResourceType']
         if self.type=='Descriptive':
-            self.MANDATORYFIELDS=['Title','Publisher','Publication year','Lead author','Principle investigator','Date','Abstract']
+            self.MANDATORYFIELDS=['Study Publication title','Publisher','Publication year','Lead author','Principle investigator','Date','Abstract']
         if self.type=='Structural':
             self.MANDATORYFIELDS=['Experiment','']
+        if self.type=='DataCite':
+            self.MANDATORYFIELDS=['Identifier','Creators','Titles','Publisher','PublicationYear','ResourceType']
         print('Mandatory fields are set to match the %s metadata' % self.type)
 
     def check_for_na(self) -> None:
