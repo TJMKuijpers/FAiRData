@@ -7,7 +7,7 @@ class CheckDataValidity:
 
     def __init__(self,Data=None,type=None):
         self.data=Data
-        self.type=None
+        self.type=type
         self.DATEFORMART='d-%m-%Y'
         self.MANDATORYFIELDS=None
         self.na_checked=None
@@ -40,7 +40,7 @@ class CheckDataValidity:
         except ValueError:
             self.correct_format='Failed, format is wrong'
         except AttributeError:
-            self.correct_format='Failed, json object has no data attribute'
+            self.correct_format='Failed, json object has no date attribute'
         else:
             self.correct_format='Passed'
         return None
