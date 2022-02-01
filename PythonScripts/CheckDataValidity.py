@@ -23,6 +23,8 @@ class CheckDataValidity:
             self.MANDATORYFIELDS=['Experiment','']
         if self.type=='DataCite':
             self.MANDATORYFIELDS=['Identifier','Creators','Titles','Publisher','PublicationYear','ResourceType']
+        if self.type='Dublin Core':
+            self.MANDATORYFIELDS=['Contributor','Coverage','Creator','Date','Description','Format','Identifier','Language','Publisher','Relation','Rights','Source','Subject','Title','Type']
         print('Mandatory fields are set to match the %s metadata' % self.type)
 
     def check_for_na(self) -> None:
