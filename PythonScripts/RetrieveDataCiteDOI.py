@@ -22,6 +22,6 @@ class RetrieveDataCiteDOI:
             if response.status_code==200:
                 print(response.json())
             else:
-                print('Status code %d: check DOI' % d)
+                print('Status code %d: check DOI' % response.status_code)
         else:
             print('Connection is not established')
