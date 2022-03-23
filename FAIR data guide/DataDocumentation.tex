@@ -1,0 +1,150 @@
+\chapter{Data documentation}
+Documentation makes it easier for you to remember project or study details in future but also can help others to understand your data. Furthermore, it can increase the reproducibility of your research (since everything is documented) and therefore others can validate your findings. 
+We can categorize documentation as either unstructured or structured. Unstructured documentation is unstandardized documentation of data such as codebooks, lab journals, methodical reports or protocols. Structured documentation is information in a standardized manner such as ISCO (Classification) or DDI (metadata).
+\whiteline 
+Metadata are thus a subset of data documentation but they are standardized and structured. They often explain the purpose, origin, data, creates, access conditions and terms of use of a data collection.  Note that not all research fields have a internationally recognized standard and thus the researcher might follow his own formal structure to create metadata.
+\whiteline
+The vast majority of metadata and documentation will be unstructured data. It entails a lot of information you have gathered during your research and, for example, have written down in a lab journal. Structured metadata is more important for data archives or online repositories. 
+\section{What information do you provide via documentation?}
+\whiteline
+\textbf{Descriptive information}
+\whiteline
+You provide the basic information about this study or project, this includes anything related to the methodology, the type of data but also project context and the received funding. \cite{KULeuven}
+\whiteline
+\textbf{Administrative information}
+\whiteline
+Administrative information includes information about the preservation of the dataset and about access rights. However, administrative information can contain more such as information about file formats and the software needed to use the dataset. We can also add more technical details such as scale or resolution ( for example, scale bar in images) but also which data points have been excluded during quality control. Finally, we can add important information to specify ownership and the confidentiality of the data. The latter is important since you don’t want to accidently share confidential data. \cite{KULeuven}
+\whiteline 
+\textbf{Structural information}
+\whiteline
+Structural information provides information about the relationship between different datasets or files. This includes a data dictionary (what does a variable mean), code, algorithms, list of abbreviations, and explanations about sample names/codes.\cite{KULeuven} \\
+Here, you can also provide information on which protocol you used the obtain a dataset, and which raw data file(s) belong to this dataset. For instance, when you have obtained fluorescent images of a cell population, you can provide to relation between the cell culture protocol, the staining protocol, the imaging protocol, and the obtained images.
+
+\section{Documentation: project and data level documentation}
+There are two levels of data documentation to make your data FAIR: data-level documentation and project-level documentation. \\
+\whiteline
+\subsection{Project-level documentation}
+\whiteline
+The documentation at a project level explains the aim of the study, which research questions / hypotheses are investigated, what methodologies are used, and much more. As a guideline \cite{CESSDA}, you can incorporate the following elements in your project-level documentation: 
+
+\begin{enumerate}
+	\item For what purpose was the data created?
+		\begin{itemize}
+		\item Title of the project
+		\item Subtitle (if applicable)
+		\item Author(s) or creator(s) of the dataset
+		\item Co-authors and their roles
+		\item Institution of author(s)
+		\item Funders
+		\item Grant numbers
+		\item References to related projects
+		\item Publications from the data
+		\end{itemize}
+	\item What does the dataset contain?
+		\begin{itemize}
+		\item The kind of data (images, numerical data, intervies, etc.)
+		\item File size, file format, relation between data files
+		\item Description of data file(s): version, structure, compatibility, format
+		\end{itemize}
+	\item How was the data collected?
+		\begin{itemize}
+			\item The methodology and technique used in collecting and creating the data
+			\item Description of all sources the data originates from
+			\item the methods/techniques used to collect the data
+				\begin{itemize}
+					\item Measurement hardware
+					\item Experimental protocols
+					\item Data collection protocols
+					\item samlpe design
+					\item Target population
+				\end{itemize}
+			\end{itemize}
+		\item Who collected the data and when?
+			\begin{itemize}
+				\item Data collector(s)
+				\item Date of data collection
+				\item Geographical location
+			\end{itemize}
+		\item How was the data processed?
+			\begin{itemize}
+				\item Data editing used?
+				\item Data cleaning?
+				\item Data coding?
+				\item Data classification?
+			\end{itemize}
+		\item Are there any manipulations/modifications performed on the data?
+			\begin{itemize}
+				\item Modifications made to the data over time (different versions of the dataset)
+				\item Anonymization
+				\item Other possible changes made to the data
+			\end{itemize}
+		\item What were the quality assurance procedures?
+			\begin{itemize}
+				\item Quality control of materials
+				\item Data integrity checks
+				\item Calibration procedures
+				\item Checking for equipment errors
+				\item Other procedures related to data quality
+			\end{itemize}
+		\item How can the data be accessed?
+			\begin{itemize}
+				\item Where the data can be found
+				\item Permanent identifiers
+				\item Access conditions such as an embargo
+				\item Licenses
+				\item Data confidentiality
+				\item Copyright and ownership
+				\item Citation information
+			\end{itemize}
+	\end{enumerate}
+	
+				
+\whiteline
+\subsection{Data-level documentation}
+\whiteline
+Data-level documentation provides information at the level of individual objects, such as pictures or variables in a spreadsheet. We can define different approaches to add documentation on a data-level by looking at quantitative data and qualitative data. \cite{CESSDA}
+\whiteline
+\textit{Quantitative data}
+For quantitative data the following documentation can be added to each object:
+\begin{itemize}
+\item Information about the data type
+	\begin{itemize}
+		\item Data type
+		\item File type
+		\item File format
+		\item Size
+		\item Data processing scripts
+	\end{itemize}
+\item Information about the variables in the file
+	\begin{itemize}
+		\item Explain the names, labels, and description of variables
+		\item Description of missing values at each variable
+		\item A specification of each variable unit if applicable
+	\end{itemize}
+\end{itemize}
+\whiteline
+\textit{Qualitative data}
+\whiteline
+Qualitative data can be obtained through interviews, observations or diaries. For qualitative data the following documentation can be added to each object:
+\begin{itemize}
+	\item Textual data files
+		\begin{itemize}
+			\item Age
+			\item Gender
+			\item Occupation
+			\item Location
+			\item Other relevant contextual information
+		\end{itemize}
+	\item Qualitative images
+		\begin{itemize}
+			\item Creator
+			\item Date
+			\item Location
+			\item Subject
+			\item Content
+			\item Copyright
+			\item Keywords
+			\item Equipment used
+		\end{itemize}
+\end{itemize}
+
