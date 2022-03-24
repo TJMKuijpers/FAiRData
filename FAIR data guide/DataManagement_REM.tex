@@ -1,0 +1,40 @@
+\documentclass[a4paper,twoside,10pt]{book}
+\usepackage[USenglish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+
+\usepackage{graphicx} %%For loading graphic files
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\newcommand{\whiteline}
+    {
+    \vskip 0.1cm
+    }
+
+\begin{document}
+\bibliography{References} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{REM Cluster: Research Data Management}
+\author{dr. ir. T.J.M. Kuijpers}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% Chapters 
+\input{Introduction}
+\input{FAIRdata}
+\input{DataDocumentation}
+\input{OrganizeData}
+\input{SoftwareVersionControl}
+\input{DataPackage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
