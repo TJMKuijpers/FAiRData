@@ -1,5 +1,0 @@
-Key	Value
-Project number	
-Project name
-Project description
-Aim of TopoChip screen	

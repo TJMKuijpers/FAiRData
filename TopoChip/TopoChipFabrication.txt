@@ -1,8 +1,0 @@
-Key	Value
-Chip Type	
-Design type	
-Feature scale	
-Number of TopoUnits	
-Chip base material	
-Chip surface treatment	
-Chip coating	

@@ -1,8 +1,0 @@
-Key	Value
-Identifier 2101231
-Creator	T.J.M. Kuijpers
-Title	Test DataCite object
-Publiser	Nature group
-PublicationYear	2022
-ResourceType	Journal Paper
-
