@@ -26,7 +26,16 @@ There are various options for a ELN, and you have to decide which platform works
   <li>eLabNext</li>
   <li>Open Science Framework </li>
 </ul>
-
+<br>
+Testing different options can be a good way to select the right ELN for you. It all depends on your needs, including: <br>
+<ul>
+<li> The type of specific features you need. </li>
+<li> Your lab's established practices and preferences. </li>
+<li> Your institution's ELN policies </li>
+ <li> Your budget </li> 
+</ul>
+<br>
+The following Nature publication might be helpful to guide you in selecting the right ELN for you: <a href='https://www.nature.com/articles/d41586-018-05895-3'> How to pick an electronic laboratory notebook (DOI:10.1038/d41586-018-05895-3)</a>
 <h2> How to use the example notebook </h2>
 To open and read the guide, you will first have to install OneNote:
 <ul>
