@@ -1,7 +1,6 @@
 <h1> Electronic Lab Journal Guide </h1>
 
-This repository folder contains an Electronic Lab Journal Guide developed at the BioInterface Science group (University of Technology, Eindhoven). 
-<br>
+An Electronic Lab Journal is a digital version that replicates an interface much like a page in your paper lab notebook. In your ELN you can enter protocols, observations, other data just like you would do on paper. ELNs offer several advantages over traditional paper notebooks; they facilitate good data management practices, providing for data security, auditing, and collaboration.
 
 <h2> The advantages of an Electronic Lab Journal </h2>
 This guide consists of different sections: information, Table of Contents, and two project examples. <br>
@@ -14,8 +13,21 @@ Properly organizing data of your project, by the use of ELN and RDM, has many ad
 <br>
 Good management helps to prevent errors and increases the quality of your analyses!
 
+<h2> Which Electronic Lab Notebook to pick?</h2>
+There are various options for a ELN, and you have to decide which platform works best for you:<br>
+<ul>
+  <li>Microsoft OneNote</li>
+  <ul><li>Generale-purpose digital notebook part of Microsoft Office.</li></ul>
+  <li>Evernote</li>
+  <ul><li>Program designed for note taking, organizing, taks management, and archiving</li></ul>
+  <li>LabArchives</li>
+  <ul><li>Cloud-based ELN enabling researchers to easily create, store, share, and manage their research data (Academic License needed)</li></ul>
+  <li>RSpace</li>
+  <li>eLabNext</li>
+  <li>Open Science Framework </li>
+</ul>
 
-<h2> Software Requirements </h2>
+<h2> How to use the example notebook </h2>
 To open and read the guide, you will first have to install OneNote:
 <ul>
   <li>OneNote (version )</li>
