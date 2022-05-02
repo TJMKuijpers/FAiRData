@@ -7,3 +7,6 @@ This way, we can share infromation with others easily, which can drive research 
 
 <h2> NWO: open access publising </h2>
 NWO aims for 100 percent Open Access. Therefore NWO requires that all publications emerging from research it funds must be made available in Open Access immediately upon publication. NWO accepts different routes to Open Access, including the Gold and Green route. For more information see <a href="https://www.nwo.nl/en/open-access-publishing"> NWO and open access</a>.
+
+<h2> Workflow to select a route </h2>
+<img src='OpenAccessRoute.jpg'>
