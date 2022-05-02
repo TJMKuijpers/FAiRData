@@ -1,8 +1,8 @@
-<h1> Electronic Lab Journal Guide </h1>
+<h1> Electronic Lab Notebook Guide </h1>
 
-An Electronic Lab Journal is a digital version that replicates an interface much like a page in your paper lab notebook. In your ELN you can enter protocols, observations, other data just like you would do on paper. ELNs offer several advantages over traditional paper notebooks; they facilitate good data management practices, providing for data security, auditing, and collaboration.
+An Electronic Lab Notebook (ELN) is a digital version that replicates an interface much like a page in your paper lab notebook. In your ELN you can enter protocols, observations, other data just like you would do on paper. ELNs offer several advantages over traditional paper notebooks; they facilitate good data management practices, providing for data security, auditing, and collaboration.
 
-<h2> The advantages of an Electronic Lab Journal </h2>
+<h2> The advantages of an Electronic Lab Notebook </h2>
 This guide consists of different sections: information, Table of Contents, and two project examples. <br>
 Properly organizing data of your project, by the use of ELN and RDM, has many advantages:
 <ul>
@@ -41,3 +41,6 @@ To open and read the guide, you will first have to install OneNote:
 <ul>
   <li>OneNote (version )</li>
 </ul>
+<br>
+
+Download the file <i>BiS_ElectronicLabJournal_v2.onepkg</i> to your local workstation and open the file in OneNote. This will load the content of the guide to the Electronic Lab Notebook.
