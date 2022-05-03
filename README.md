@@ -1,6 +1,17 @@
-# FAiRData
+<h1>Research data management</h1>
+<h2> General information </h2>
+This repository contains information about research data management, reproducible code, and jupyter notebooks to create metadata schemes. There are 4 main subfolders in this repository that are focused on a main topic: <br>
+<ul>
+  <li> Electronic Lab Notebook </li>
+  <li> Reproducible code </li>
+  <li> Data documentation </li>
+  <li> Open Access Publishin </li>
+ </ul>
+ <br>
+ This repository will be updated frequently with new information and guidelines.
 
-<h4> Description </h4>
+<h2> Data documentation</h2>
+<h3> Metadata schemes </h2>
 This is the testing environment to develop a workflow to build and test a FAIR metadata documentation based on the FAIR principles. We include different metadata schemes including the DataCite schema. Furthermore, it is possible to check your documentation against a predifed set of key words for a specific research area. </br>
 
 <h4> DataCite </h4>
