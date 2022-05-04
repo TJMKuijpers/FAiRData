@@ -16,9 +16,24 @@ In this section we will mainly discuss the reproducibility of research code (Dat
 <h3> Software version control </h3>
 When you are working in a computational group, you can benefit from using version control software such as git. Version control keeps track of every modification to the code and allows programmers to return to a previous version if a major error occures. Furthermore, repositories such as GitHub or Gitlab can help you share your research code with the world. <br>
 <h4> What is GitHub </h4>
-Github is a commercial version-control hosting platform that offers a web interface and provides a mixture of both free and paid served for working with repositories. THe web interface offers a straightforward way to share your porjects online with colleagues and other researchers. It is useful for you as a researcher, as it allows you to find, develop, and publish scripts and research software. <br>
+Github is a commercial version-control hosting platform that offers a web interface and provides a mixture of both free and paid served for working with repositories. The web interface offers a straightforward way to share your porjects online with colleagues and other researchers. It is useful for you as a researcher, as it allows you to find, develop, and publish scripts and research software. <br>
 <h4> Create a repository on GitHub </h4>
 When creating a repositories, there are a couple of things to think about. First, give the repository a name that makes sense to you and others. For example, when you develop a new tool, give the repository the name of that tool. Second, do you already want to make your repository public or would you like to work in a private environment? A private environment allows you to make full use of the version control but third parties cannot see your work.
+
+<h3> Software dependencies: create an environment </h3>
+Our software often depends on other software (packages/libraries). Those packages are often updated and therefore change over time. Thus it might be that software works today but is not working anymore in ten years time. To improve the reproducibility of your research software, it is important to work with environment. An environment is a way to capture your research software with all it's dependencies to make it robust against time. 
+
+There are a number of tools to create an environment:<br>
+<ul>
+<li>Conda</li>
+  <li>Anaconda</li>
+  <li>PIP</li>
+  <li>Virtualenv</li>
+  <li>Pipenv</li>
+</ul>
+Depending on your programming language you can select the appropriate tool. If you are not sure which one to pick, Anaconda provides a graphical user interface to create,manage, and export environments for both R and Python. <br/>
+<br/>
+Another posibility is to create a container. A container captures the application and all its dependencies but unlike an environment, it can be easily shuttled between different operating systems. For more information about containers, have a look at <a href='https://www.ibm.com/cloud/learn/docker'>Docker</a> or <a href='https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/'>Kubernettes</a>.
 
 <h3> Software licenses </h3>
 Although you might not worry too much about a license, it is actually vital to pick one:
