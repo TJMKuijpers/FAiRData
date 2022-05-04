@@ -10,6 +10,37 @@ This repository contains information about research data management, reproducibl
  <br>
  This repository will be updated frequently with new information and guidelines.
 
+<h2> Data package </h2>
+A data package is a collection of all digital parts of a research project including data, code, texts (protocols, reports, questionnaires, meta data). The collection is created in such a way that reproducing all results is straightforward.  <br>
+<br>
+When creating a data package, you should keep the following three principles in mind:
+<ul>
+  <li>Files should be organized in a conventional folder structure</li>
+  <li>Data, methods, and output should be clearly separated</li>
+  <li>The computational environment should be specified</li>
+</ul>
+
+When working on your data package, you can follow the steps below:
+<ul>
+  <li>Think about a good folder structure</li>
+  <li>Create folder structure (main directory and sub directories)</li>
+  <li>Add all files needed for reproducing the results of the project</li>
+  <li>Try to have the data package as clean and easy to use (add readme files to important folders)</li>
+  <li>Have a peer check the data package and see if it works correctly</li>
+  <li>When you finished the data package, place it in your data archive or repository</li>
+</ul>
+
+Finally, you can use the following checklist to see if you included all relevant files:
+- [ ] Readme file(s)
+- [ ] Metadata file
+- [ ] Documentation file 
+- [ ] Raw data
+- [ ] Processed data
+- [ ] Protocols 
+- [ ] Methodologies 
+- [ ] Scripts 
+
+
 <h2> Data documentation</h2>
 <h3> Metadata schemes </h2>
 This is the testing environment to develop a workflow to build and test a FAIR metadata documentation based on the FAIR principles. We include different metadata schemes including the DataCite schema. Furthermore, it is possible to check your documentation against a predifed set of key words for a specific research area. </br>
