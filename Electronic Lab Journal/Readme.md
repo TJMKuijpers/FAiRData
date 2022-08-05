@@ -1,6 +1,6 @@
 <h1> Electronic Lab Notebook Guide </h1>
 
-An Electronic Lab Notebook (ELN) is a digital version that replicates an interface much like a page in your paper lab notebook. In your ELN you can enter protocols, observations, other data just like you would do on paper. ELNs offer several advantages over traditional paper notebooks; they facilitate good data management practices, providing for data security, auditing, and collaboration.
+An Electronic Lab Notebook (ELN) is a digital version that replicates an interface much like a page in your paper lab notebook. Just like a paper journal, you can add protocols, observations, and other data to your ELN. ELNs offer several advantages over traditional paper notebooks; they facilitate good data management practices, provide data security, auditing, and collaboration. 
 
 <h2> The advantages of an Electronic Lab Notebook </h2>
 This guide consists of different sections: information, Table of Contents, and two project examples. <br>
